@@ -1,0 +1,36 @@
+{% extends 'layout.html' %} 
+{% block title %}index {{title}} {%endblock%} 
+{% block head %}
+<link rel="stylesheet" type="text/css" href="../css/index.css"> 
+{% endblock %} 
+
+{% block content %}
+<form>
+    <div class="form-group">
+        <label for="username">default data</label>
+        <input type="text" class="form-control" name="username" placeholder="User name">
+    </div>
+    <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" name="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" name="password" placeholder="Password">
+    </div>
+    <!-- <div class="form-group">
+        <label for="exampleInputFile">File input</label>
+        <input type="file" id="exampleInputFile">
+        <p class="help-block">Example block-level help text here.</p>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> Check me out
+        </label>
+    </div> -->
+    <button type="button" id="btn-submit" class="btn btn-default">Submit</button>
+</form>
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript" src="../js/index.js"></script>
+{% endblock %}

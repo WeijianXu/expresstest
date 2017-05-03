@@ -1,0 +1,12 @@
+node_modules
+dist
+.tmp
+bower_components
+test/bower_components
+
+# bower libarary
+public/lib
+
+# log 
+.log
+npm-debug.log
